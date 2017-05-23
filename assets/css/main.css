@@ -6,11 +6,22 @@ Colors:
 #75726C;
 #EDE9E2
 */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
 
 body{
-	font-family: 'Raleway', sans-serif;
+	overflow: auto;
 	margin: 0;
-	height: 100%
+	height: 100%;
 }
 
 nav{
@@ -25,39 +36,90 @@ nav img{
 }
 
 nav a{
+	display: block;
 	color: #FFFFFF;
 	text-decoration: none;
 	padding: 20px;
 	float: right;
+	right: 100px;
 }
 
 header img{
 	position: relative;
 	width: 100%;
-	height: 100%;	
+	height: 100%;
+	background-attachment: fixed;	
 }
 
 h1{
 	color: #00B2A9;
-	padding-left: 10px;
+	padding-left: 20px;
+	padding-top: 30px;
 }
 
 h4{
 	color: #75726C;
-	padding-left: 10px; 
+	padding-left: 20px; 
 }
 
 input{
-	background-color: whitesmoke;
-	padding: 10px;
+	background-color: #EDE9E2;
+	padding-left: 20px;
 	border: 0;
 	border-bottom: 1px solid;
+	color: #75726C;
+	left: 20px;
+	width: 400px;
+	height: 30px;
 }
 
-header .contenedor{
-	background-color: whitesmoke;
+button{
+	background-color: #E54E79;
+	border-radius: 20px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+	width: 250px;
+	height: 50px;
+	margin: 50px;
+}
+
+fa-heart{
+
+}
+
+p{
+	color: #75726C;
+	left: 20px;
+}
+
+.contenedor{
+	background-color: #EDE9E2;
+	overflow: auto;
 	position: relative;
 	height: 450px;
 	width: 500px;
 	float: right;
+	bottom: 600px;
+}
+
+#centro{
+	background-color: #00B2A9;
+	height: 600px;
+	width: 100%;
+	text-align: center;
+}
+
+h2{
+	background-color: #EDE9E2;
+	color: #75726C;
+	font-size: 50px;
+	margin: 50px auto;
+	position: relative;
+}
+
+footer{
+	background-color: #75726C;
+	height: 250px;
+	width: 100%;
 }
