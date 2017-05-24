@@ -9,21 +9,25 @@
 <body>
 	<nav>
 		<div class="menu">
-			<div class="logo"><img src="assets/img/logo-white.png"></div>
-			<a href="#">Help</a>
-			<a href="#">Explore</a>
-			<a href="#">Drive</a>
+			<a href="#" id="logo">
+				<img src="assets/img/logo-white.png">
+			</a>
+			<ul id="menu-nav">
+			<li id="menu-nav-drive"><a href="#">Drive</a></li>
+			<li id="menu-nav-explore"><a href="#">Explore</a></li>
+			<li id="menu-nav-help"><a href="#">Help</a></li>
+			</ul>
 		</div>
 	</nav>
 
 	<header>
-		<img src="assets/img/cropped-Lyft-Promo-Codes-car-1.jpg">
 		<div class="contenedor">
-			<h1>TURN MILES INTO MONEY</h1>
-			<h4>SIGN UP TO DRIVE LEFT</h2>
-			<input type="text" placeholder="Phone Number"><br>
-			<button>
-				<h3>BECOME A DRIVER</h3><i class="fa fa-heart" aria-hidden="true"></i>
+			<h1>TURN MILES INTO MONEY</h1><br>
+			<h4>SIGN UP TO DRIVE LEFT</h4><br>
+
+			<input type="text" placeholder="Phone Number"><br><br>
+			<button id="driver"><br>
+				<h3>BECOME A DRIVER <span class="heart"></span></h3>
 			</button><br>
 			<p>Already applied? Check the status of your application here.</p><br>
 			<p>Earn money for inviting friends to drive. Learn more.</p>
@@ -32,11 +36,58 @@
 
 	<section id="centro">
 		<h2>PLAY WITH LIFT</h2>
+			<div class="container">
+				<div class="coordenada">
+					<table>
+						<tr>
+							<td>
+								<i class="fa fa-car" aria-hidden="true"></i>
+							</td>
+							<td>
+								<div class="group">
+						      <input type="text" required id="x-coord">
+						      <span class="highlight"></span>
+						      <span class="bar"></span>
+						      <label>X coordinate</label>
+						    </div>
+						</td>
+						<td>
+							<i class="fa fa-car" aria-hidden="true"></i>
+						</td>
+						<td>
+							<div class="group">
+						      <input type="text" required id="y-coord">
+						      <span class="highlight"></span>
+						      <span class="bar"></span>
+						      <label>Y coordinate</label>
+						    </div>
+							</td>
+						</tr>
+					</table>
+					<button id="start">START!</button>
+				</div>
+			</div>
 	</section>
 
 	<footer>
-		<div class="sprint">
-			
+		<div class="container">
+			<h5>Sprint 3 - Project</h5>
+		</div>
+		<div class="links">
+			<ul>
+				<li>
+					<a href="#">Link 1</a>
+				</li>
+				<li>
+					<a href="#">Link 2</a>
+				</li>
+				<li>
+					<a href="#">Link 3</a>
+				</li>
+				<li>
+					<a href="#">Link 4</a>
+				</li>
+			</ul>
 		</div>
 		
 	</footer>
