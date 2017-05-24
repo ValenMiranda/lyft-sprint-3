@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Lift</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -13,9 +14,9 @@
 				<img src="assets/img/logo-white.png">
 			</a>
 			<ul id="menu-nav">
-			<li id="menu-nav-drive"><a href="#">Drive</a></li>
-			<li id="menu-nav-explore"><a href="#">Explore</a></li>
-			<li id="menu-nav-help"><a href="#">Help</a></li>
+			<li><a href="#">Drive</a></li>
+			<li><a href="#">Explore</a></li>
+			<li><a href="#">Help</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -25,10 +26,10 @@
 			<h1>TURN MILES INTO MONEY</h1><br>
 			<h4>SIGN UP TO DRIVE LEFT</h4><br>
 
-			<input type="text" placeholder="Phone Number"><br><br>
-			<button id="driver"><br>
-				<h3>BECOME A DRIVER <span class="heart"></span></h3>
-			</button><br>
+			<input type="text" id="phone" placeholder="Phone Number" required=""><br><br>
+			<button id="driver">
+				<h3>BECOME A DRIVER <i class="fa fa-heart" style="font-size:18px;"></i></h3>
+			</button><br><br>
 			<p>Already applied? Check the status of your application here.</p><br>
 			<p>Earn money for inviting friends to drive. Learn more.</p>
 		</div>
@@ -37,33 +38,28 @@
 	<section id="centro">
 		<h2>PLAY WITH LIFT</h2>
 			<div class="container">
-				<div class="coordenada">
+				<div id="coordenada">
 					<table>
 						<tr>
 							<td>
-								<i class="fa fa-car" aria-hidden="true"></i>
+								<i class="fa fa-car" style="font-size:36px;"></i>
 							</td>
 							<td>
 								<div class="group">
-						      <input type="text" required id="x-coord">
-						      <span class="highlight"></span>
-						      <span class="bar"></span>
-						      <label>X coordinate</label>
-						    </div>
-						</td>
-						<td>
-							<i class="fa fa-car" aria-hidden="true"></i>
-						</td>
-						<td>
-							<div class="group">
-						      <input type="text" required id="y-coord">
-						      <span class="highlight"></span>
-						      <span class="bar"></span>
-						      <label>Y coordinate</label>
+						      		<input type="text" required id="x-coordinate" placeholder="X Coordinate">
+						    	</div>
+							</td>
+							<td>
+								<i class="fa fa-car" style="font-size:36px;"></i>
+							</td>
+							<td>
+								<div class="group">
+						      	<input type="text" required id="y-coordinate" placeholder="Y Coordinate">
 						    </div>
 							</td>
 						</tr>
 					</table>
+					<br>
 					<button id="start">START!</button>
 				</div>
 			</div>
@@ -76,16 +72,19 @@
 		<div class="links">
 			<ul>
 				<li>
-					<a href="#">Link 1</a>
+					<a href="#"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
 				</li>
+				<br>
 				<li>
-					<a href="#">Link 2</a>
+					<a href="#"><i class="fa fa-youtube-square" style="font-size:36px"></i></a>
 				</li>
+				<br>
 				<li>
-					<a href="#">Link 3</a>
+					<a href="#"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
 				</li>
+				<br>
 				<li>
-					<a href="#">Link 4</a>
+					<a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
 				</li>
 			</ul>
 		</div>
